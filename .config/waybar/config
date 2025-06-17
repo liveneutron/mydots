@@ -1,0 +1,102 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "spacing": 0,
+    "height": 0,
+"reload_style_on_change": true,
+
+
+   /* "margin-top": 8,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,*/
+
+    "modules-left": [
+	"hyprland/workspaces" 
+    ],
+
+    "modules-center": [
+	"clock",
+    ],
+
+
+    "modules-right": [
+        "tray",
+	"pulseaudio",
+        "battery",
+        "network",
+	"custom/noti",
+	"custom/power",
+    ],
+
+    "hyprland/workspaces": {
+        "disable-scroll":false,
+        "all-outputs": true,
+        "tooltip": false,
+	"on-scroll-up": "hyprctl dispatch workspace m+1 > /dev/null",
+	"on-scroll-down": "hyprctl dispatch workspace m-1 > /dev/null",
+	},
+
+    "tray": {
+	"icon-size": 20,
+        "spacing": 10,
+        "tooltip": false
+	},
+
+    "clock": {
+        "format": "{:%I:%M - %d/%m/%Y}",
+        "tooltip": false,
+	"interval": 1,
+	"timezone": "Asia/Kolkata",	
+	},
+
+
+
+    "battery": {
+	"on-scroll-up":"brightnessctl set +2%",
+	"on-scroll-down":"brightnessctl set 2%-",
+        "format": "{icon}  {capacity}%",
+	"format-icons": {
+	"default": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂁","󰁹"]
+	},
+	"format-charging": "󰂄  {capacity}%",
+        "interval": 5,
+
+        "tooltip": false
+	},
+
+    "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤩",
+        "tooltip-format-wifi":"{essid}",
+	"on-click":"kitty -- nmtui", 
+	 },
+
+    "pulseaudio": {
+	"format": "{icon}   {volume}%",
+  	"format-icons": {
+   	"default": ["\uf026", "\uf027", "\uf028"]},
+ 	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "scroll-step": 5,
+        "max-volume": 200,
+        "nospacing": 1,
+        "tooltip": false,
+	"format-muted": "\uf00d {volume}%"
+	},
+
+	"custom/noti": {
+	"format": "󰂚",
+	"tooltip": false,
+        "exec-if": "which swaync-client",
+	"exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+	},
+
+	"custom/power": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "~/scripts/powermenu.sh"
+	},
+
+}

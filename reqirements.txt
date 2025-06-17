@@ -1,0 +1,33 @@
+[compulosry]
+git 
+base-devel
+networkmanager
+pipewire-pulse
+brightnessctl
+
+[for windows-manager]
+kitty
+hyprland
+hyprpolkitagent
+rofi-wayland
+rofi-emoji
+rofi-calc
+swww
+imagemagick
+hyprsunset
+waybar
+python-pywall16
+hyprlock
+swaync
+libnotify
+wtype
+wl-clipboard
+xdg-desktop-portal-hyprland
+
+
+[fonts, themes and icons]
+ttf-meslo-nerd
+arc-gtk-theme
+arc-icon-theme
+noto-fonts-emoji
+papirus-icon-theme
