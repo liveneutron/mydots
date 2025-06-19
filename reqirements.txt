@@ -24,6 +24,22 @@ wtype
 wl-clipboard
 xdg-desktop-portal-hyprland
 
+[my-apps]
+ranger [python-pillow]
+vim
+Brave
+librewolf
+lxappearance
+gotop
+spotify(yay)
+spicetify-cli(yay)
+curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh
+unzip
+blender
+godot
+downgrade
+todo
+
 
 [fonts, themes and icons]
 ttf-meslo-nerd
