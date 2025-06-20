@@ -6,6 +6,7 @@ pipewire-pulse
 brightnessctl
 
 [for windows-manager]
+gvfs-mtp
 kitty
 hyprland
 hyprpolkitagent
@@ -23,12 +24,12 @@ libnotify
 wtype
 wl-clipboard
 xdg-desktop-portal-hyprland
+udiskie
 
 [my-apps]
 ranger [python-pillow]
 vim
 Brave
-librewolf
 lxappearance
 gotop
 spotify(yay)
@@ -40,10 +41,10 @@ godot
 downgrade
 todo
 
+nvtop
 
 [fonts, themes and icons]
 ttf-meslo-nerd
 arc-gtk-theme
-arc-icon-theme
 noto-fonts-emoji
 papirus-icon-theme
